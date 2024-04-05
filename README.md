@@ -28,7 +28,7 @@ database.database_create(database_name, database_table, database_attribute, tabl
 })
 .catch((resolve) =>
 {
-    console.log("Created failed", resolve)
+    console.log("Created failed!", resolve)
 });
 ```
 
