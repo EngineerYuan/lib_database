@@ -42,7 +42,7 @@ database.database_open(database_name).then((resolve, reject) => {
     let index = "Alex", id = 10010, age = 28, address = "中国"
     /**
      * Inserting the data
-     * OK {status: Database.STATUS.SUCCESS, name: 'done', message: 'Adler'}
+     * OK {status: Database.STATUS.SUCCESS, name: 'done', message: 'Alex'}
      */
     database.database_insert(index, {id: id, age: age, address: address}).then(resolve => console.log(resolve)).catch(resolve => console.log(resolve));
 
