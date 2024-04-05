@@ -31,7 +31,6 @@ database.database_create(database_name, database_table, database_attribute, tabl
     console.log("Created failed", resolve)
 });
 ```
-![Creating a database](https://xxxxxxxx.xxxxx)
 
 ## lib_database Interface
 
