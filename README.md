@@ -1,13 +1,14 @@
 # lib_database
 
-`lib_database` is a portable Javascript IndexedDB API interface published under the public domain license protocol. 
+`lib_database` is a portable Javascript IndexedDB API interface published under the public domain license protocol.
 
-✈️ [English](https://creativecommons.org/public-domain/) ✈️[中文](https://creativecommons.org/public-domain/)
+✈️ [English](https://github.com/EngineerYuan/lib_database/README.md) ✈️[中文](https://github.com/EngineerYuan/lib_database/README_ZH_CN.md)
 
 ## Using lib_database
 
 ``` js
 // Creating a database
+let database = new Database();
 let database_name = "database_example";
 let database_table = "table_example";
 let database_attribute = {path: "__path__", increment: false};
