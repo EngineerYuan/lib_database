@@ -167,7 +167,7 @@ class Abstract_Database
 
                     Object.defineProperty(data, "__index__", index);
 
-                    delete result[data["[@@path]"]];
+                    delete result[data["__path__"]];
 
                     for (const property in result)
                     {
