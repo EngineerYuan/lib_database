@@ -2,7 +2,7 @@
 
 `lib_database` 是一款便携的 Javascript IndexedDB API 接口，遵从 public domain license 协议。
 
-✈️ [English](https://github.com/EngineerYuan/lib_database/README.md) ✈️[中文](https://github.com/EngineerYuan/lib_database/README_ZH_CN.md)
+✈️ [English](https://github.com/EngineerYuan/lib_database/blob/main/README.md) ✈️[中文](https://github.com/EngineerYuan/lib_database/blob/main/README_ZH-CN.md)
 
 ## 使用 lib_database
 
