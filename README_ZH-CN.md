@@ -24,14 +24,13 @@ let tables = [
 database.database_create(database_name, database_table, database_attribute, tables)
 .then((resolve) =>
 {
-    console.log("创建成功!", resolve)
+    console.log("创建成功！", resolve)
 })
 .catch((resolve) =>
 {
-    console.log("创建失败", resolve)
+    console.log("创建失败！", resolve)
 });
 ```
-![创建数据库](https://xxxxxxxx.xxxxx)
 
 ## lib_database 接口
 
