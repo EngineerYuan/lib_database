@@ -1,11 +1,11 @@
 # lib_database
 
-`lib_database` 是一款便携的 Javascript IndexedDB API 接口，遵从 public domain license 协议。
+`lib_database` is a portable Javascript IndexedDB API interface published under the public domain license protocol. [中文](https://creativecommons.org/public-domain/)
 
-## 使用 lib_database
+## Using lib_database
 
 ``` js
-// 创建数据库
+// Creating a database
 let database_name = "database_example";
 let database_table = "table_example";
 let database_attribute = {path: "__path__", increment: false};
@@ -15,35 +15,35 @@ let tables = [
     { name: "address", path: database_attribute.path, unique: false, multi_entry: false }
 ];
 /**
- * 功能：创建数据库
- * 结果：创建成功! {status: Database.STATUS.SUCCESS, data: IDBOpenDBRequest}
+ * Function: Create a database
+ * Result: Created successfully! {status: Database.STATUS.SUCCESS, data: IDBOpenDBRequest}
  */
 database.database_create(database_name, database_table, database_attribute, tables)
 .then((resolve) =>
 {
-    console.log("创建成功!", resolve)
+    console.log("Created successfully!", resolve)
 })
 .catch((resolve) =>
 {
-    console.log("创建失败", resolve)
+    console.log("Created failed", resolve)
 });
 ```
-![创建数据库](https://xxxxxxxx.xxxxx)
+![Creating a database](https://xxxxxxxx.xxxxx)
 
-## lib_database 接口
+## lib_database Interface
 
-+ 创建数据库：database_create(database, table, attribute, structure)
-+ 打开数据库：database_open(database)
-+ 打开事务：database_transaction(table, mode)
-+ 获取所有表名：database_tables()
-+ 查找数据：database_query(key)
-+ 插入数据：database_insert(index, value)
-+ 更改数据：database_update(index, value)
-+ 删除数据：database_delete(index)
-+ 关闭数据库：database_close()
++ Creating the database：database_create(database, table, attribute, structure)
++ Opening the database：database_open(database)
++ Starting transaction：database_transaction(table, mode)
++ Getting all table names：database_tables()
++ Querying the data：database_query(key)
++ Inserting the data：database_insert(index, value)
++ Updating the data：database_update(index, value)
++ Deleting the data：database_delete(index)
++ Closing the database：database_close()
 
-## 说明
-💌 嗨！我亲爱的朋友们，我来自中国江苏的工程师，非常期待能在这里找到志同道合的朋友。今年的清明节休假期间，我编写了 `lib_database` 库，它会更方便的帮我们操作 IndexedDB API，大家的关注，我会在今后逐步完善它。
+## Description
+💌 Hi! My dear friends, I am an engineer from Jiangsu, China, and I am looking forward to finding like-minded friends here. During this year's Qingming Festival holiday, I wrote the `lib_database` library, which will make it more convenient for us to operate the IndexedDB API. If you pay attention, I will gradually improve it in the future.
 
 ## License
 [public domain license](https://creativecommons.org/public-domain/)
